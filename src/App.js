@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Pelicula from './Pelicula';
 
 function App() {
   return (
@@ -241,17 +242,14 @@ function App() {
                 </div>
 
                 {/* componente */}
-                <div className="movie-item-style-2">
-                  <img src="images/uploads/mv1.jpg" alt=""/>
-                  <div className="mv-item-infor">
-                    <h6><a href="moviesingle.html">oblivion <span>(2012)</span></a></h6>
-                    <p className="rate"><i className="ion-android-star"></i><span>8.1</span> /10</p>
-                    <p className="describe">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
-                    <p className="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
-                    <p>Director: <a href="#">Joss Whedon</a></p>
-                    <p>Stars: <a href="#">Robert Downey Jr.,</a> <a href="#">Chris Evans,</a> <a href="#">  Chris Hemsworth</a></p>
-                  </div>
-                </div>
+                <Pelicula titulo="oblivion" año="(2012)" calificacion="8.1" director="Joss whedon" actores="Robert Downey Jr., Chris Evans, Chris Hemsworth" fecha="1 May 2015" duracion="2h 21min" img="images/uploads/mv1.jpg">
+                  Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...
+                </Pelicula>
+
+                <Pelicula titulo="into the wild" año="(2014)" calificacion="7.8" director="Anthony Russo, Joe Russo" actores="Chris Evans, Samuel L. Jackson, Scarlett Johansson" fecha="1 May 2015" duracion="2h 21min" img="images/uploads/mv2.jpg">
+                  As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat...
+                </Pelicula>
+                
 
                 {/* componente */}
                 <div className="movie-item-style-2">
